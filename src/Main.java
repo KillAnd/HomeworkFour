@@ -27,5 +27,17 @@ public class Main {
         } else {
             System.out.println( "Если скорость " + speed + " то, можно ездить спокойно");
         }
+
+        int humanAge = 6;
+        if ( humanAge >= 2 && humanAge <= 6) {
+            System.out.println("Если возраст человека равен " + humanAge + ", то ему нужно ходить в детский сад");
+        } else if ( humanAge >= 7 && humanAge <= 17 ) {
+            System.out.println("Если возраст человека равен " + humanAge + ", то ему нужно ходить в школу");
+        } else if ( humanAge >= 18 && humanAge <= 24 ) {
+            System.out.println("Если возраст человека равен " + humanAge + ", то ему нужно ходить в университет");
+        } else if ( humanAge > 24 ){
+            System.out.println("Если возраст человека равен " + humanAge + ", то ему нужно ходить на работу");
+        }
+
     }
 }
