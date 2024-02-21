@@ -21,22 +21,36 @@ public class Main {
 
         int speed = 130;
         if (speed > 60) {
-            System.out.println( "Если скорость " + speed + " то, придется заплатить штраф");
-        } else if ( speed == 60 ) {
-            System.out.println( "Это невозможно! :D");
+            System.out.println("Если скорость " + speed + " то, придется заплатить штраф");
+        } else if (speed == 60) {
+            System.out.println("Это невозможно! :D");
         } else {
-            System.out.println( "Если скорость " + speed + " то, можно ездить спокойно");
+            System.out.println("Если скорость " + speed + " то, можно ездить спокойно");
         }
 
         int humanAge = 6;
-        if ( humanAge >= 2 && humanAge <= 6) {
+        if (humanAge >= 2 && humanAge <= 6) {
             System.out.println("Если возраст человека равен " + humanAge + ", то ему нужно ходить в детский сад");
-        } else if ( humanAge >= 7 && humanAge <= 17 ) {
+        } else if (humanAge >= 7 && humanAge <= 17) {
             System.out.println("Если возраст человека равен " + humanAge + ", то ему нужно ходить в школу");
-        } else if ( humanAge >= 18 && humanAge <= 24 ) {
+        } else if (humanAge >= 18 && humanAge < 24) {
             System.out.println("Если возраст человека равен " + humanAge + ", то ему нужно ходить в университет");
-        } else if ( humanAge > 24 ){
+        } else if (humanAge > 24) {
             System.out.println("Если возраст человека равен " + humanAge + ", то ему нужно ходить на работу");
+        }
+
+        int childrenAge = 14;
+        boolean haveAdultMan = true;
+        if (childrenAge <= 5) {
+            System.out.println("Если возраст ребенка равен " + childrenAge + ", то ему нельзя кататься на аттракционе");
+        } else if (childrenAge >= 5 && childrenAge <= 14 && haveAdultMan) {
+            System.out.println("Если возраст ребенка равен " + childrenAge + ", то ему можно кататься на аттракционе " +
+                    "в сопровождении взрослого");
+        } else if (childrenAge > 14) {
+            System.out.println("Если возраст ребенка равен " + childrenAge + ", то ему можно кататься на аттракционе " +
+                    "без сопровождения взрослого");
+        } else {
+            System.out.println("С 5 до 14 лет, без взрослого нельзя, извините");
         }
 
     }
