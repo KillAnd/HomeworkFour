@@ -11,6 +11,7 @@ public class Main {
                     "нужно немного подождать");
         }
 
+
         int temperature = 8;
         if (temperature <= 5) {
             System.out.println("На улице " + temperature + " градусов, нужно надеть шапку");
