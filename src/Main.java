@@ -57,7 +57,6 @@ public class Main {
         int sitPlace = 60;
         int humanWagon = 121;
         int freePlace = humanWagon + 1;
-        boolean GetOnTheWagon = true;
         if (humanWagon < capacityWagon && humanWagon < sitPlace) {
             System.out.println("Вы можете пройти в вагон и занять сидячее место под номером " + freePlace);
         } else if (humanWagon < capacityWagon) {
@@ -65,6 +64,23 @@ public class Main {
         } else {
             System.out.println("Извините, все места заняты...");
         }
+
+        int one = 4;
+        int two = 22;
+        int three = 21;
+        boolean three1 = three > two && three > one;
+        boolean two1 = two > three && two > one;
+        boolean one1 = one > two && one > three;
+        if (one1) {
+            System.out.println("One больше всех");
+        } else if (two1) {
+            System.out.println("Two больше всех");
+        } else if (three1){
+            System.out.println("Three больше всех");
+        } else {
+            System.out.println( "Числа не могут повторяться");
+        }
+
 
     }
 }
