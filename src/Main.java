@@ -53,5 +53,18 @@ public class Main {
             System.out.println("С 5 до 14 лет, без взрослого нельзя, извините");
         }
 
+        int capacityWagon = 120;
+        int sitPlace = 60;
+        int humanWagon = 121;
+        int freePlace = humanWagon + 1;
+        boolean GetOnTheWagon = true;
+        if (humanWagon < capacityWagon && humanWagon < sitPlace) {
+            System.out.println("Вы можете пройти в вагон и занять сидячее место под номером " + freePlace);
+        } else if (humanWagon < capacityWagon) {
+            System.out.println("Вы можете пройти в вагон, но к сожалению остались только стоячие места");
+        } else {
+            System.out.println("Извините, все места заняты...");
+        }
+
     }
 }
